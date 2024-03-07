@@ -86,7 +86,6 @@ body {
     white-space: nowrap;
 }
 
-
 .connection-dot {
     position: absolute;
     width: 10px;
@@ -94,26 +93,31 @@ body {
     background-color: #333;
     border-radius: 50%;
     cursor: pointer;
-    display: none;
+    display: none; /* Initially hidden */
     z-index: 1;
 }
 
+/* Adjust the position of each dot */
 .connection-dot.top {
     top: -5px;
-    left: calc(50% - 5px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .connection-dot.right {
-    top: calc(50% - 5px);
+    top: 50%;
     right: -5px;
+    transform: translateY(-50%);
 }
 
 .connection-dot.bottom {
     bottom: -5px;
-    left: calc(50% - 5px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .connection-dot.left {
-    top: calc(50% - 5px);
+    top: 50%;
     left: -5px;
+    transform: translateY(-50%);
 }

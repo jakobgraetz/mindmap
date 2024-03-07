@@ -15,17 +15,6 @@ clearBtn.addEventListener("click", () => {
 const root = document.getElementById("root");
 const menu = document.getElementById("menu");
 
-root.addEventListener('mouseenter', () => {
-    const rect = root.getBoundingClientRect();
-    menu.style.left = `${rect.left + rect.width / 2}px`;
-    menu.style.top = `${rect.bottom}px`;
-    menu.style.display = 'block';
-});
-
-root.addEventListener('mouseleave', () => {
-    menu.style.display = 'none';
-});
-
 // Create connection dots for the root node
 const topDot = document.getElementById("top-dot");
 const rightDot = document.getElementById("right-dot");
@@ -34,7 +23,22 @@ const leftDot = document.getElementById("left-dot");
 
 const connectionDots = [topDot, rightDot, bottomDot, leftDot];
 
+root.addEventListener('mouseenter', () => {
+    const rect = root.getBoundingClientRect();
+    menu.style.left = `${rect.left + rect.width / 2}px`;
+    menu.style.top = `${rect.bottom}px`;
+    menu.style.display = 'block';
+    menu.style.display = 'block';
+    connectionDots.forEach(dot => dot.style.display = 'block');
+});
+
+root.addEventListener('mouseleave', () => {
+    menu.style.display = 'none';
+    connectionDots.forEach(dot => dot.style.display = 'none');
+});
+
 // Add event listeners for clicking and dragging connection dots
+/*
 connectionDots.forEach(dot => {
     dot.addEventListener('mousedown', (event) => {
         event.preventDefault();
@@ -61,3 +65,4 @@ connectionDots.forEach(dot => {
         document.addEventListener('mouseup', handleMouseUp);
     });
 });
+*/

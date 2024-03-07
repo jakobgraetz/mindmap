@@ -4,6 +4,10 @@
 * (C) Jakob Grätz - 2024
 */
 
+// FIXME: DOTS not displayed correctly. Should be one on each
+// side of a mind map node. (Currently only root node possible)
+// >> Either displayed on the edges of the screen or (currently)
+// >> displayed in the mind map node (currently root node).
 const clearBtn = document.getElementById("clear-btn");
 clearBtn.addEventListener("click", () => {
     // This is temporary. Maybe in the future I'd like to,

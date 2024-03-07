@@ -65,3 +65,57 @@ body {
     outline: none;
     text-align: center;
 }
+
+.menu {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+    padding: 5px;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin: 5px;
+    white-space: nowrap;
+}
+
+
+.connection-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+}
+
+.connection-dot.top {
+    top: -5px;
+    left: calc(50% - 5px);
+}
+
+.connection-dot.right {
+    top: calc(50% - 5px);
+    right: -5px;
+}
+
+.connection-dot.bottom {
+    bottom: -5px;
+    left: calc(50% - 5px);
+}
+
+.connection-dot.left {
+    top: calc(50% - 5px);
+    left: -5px;
+}

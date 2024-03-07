@@ -3,3 +3,13 @@
 * Version 07-03-2024 (DD-MM-YYYY)
 * (C) Jakob Grätz - 2024
 */
+
+body {
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+

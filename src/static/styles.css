@@ -18,7 +18,7 @@ body {
 }
 
 .mind-map-clear-btn {
-    background-color: #ff6347;
+    background-color: #cd2b19;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -29,7 +29,7 @@ body {
 }
 
 .mind-map-clear-btn:hover {
-    background-color: #ff473d;
+    background-color: #ee564e;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
@@ -37,4 +37,31 @@ body {
 .mind-map-clear-btn:active {
     transform: translateY(1px);
     box-shadow: none;
+}
+
+.mindmap {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mind-map-origin {
+    width: 400px;
+    height: 150px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.mind-map-origin input[type="text"] {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: inherit;
+    flex: 1;
+    outline: none;
+    text-align: center;
 }

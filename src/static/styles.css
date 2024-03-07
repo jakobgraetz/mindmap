@@ -13,3 +13,28 @@ body {
     text-align: center;
 }
 
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+.mind-map-clear-btn {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mind-map-clear-btn:hover {
+    background-color: #ff473d;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.mind-map-clear-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}

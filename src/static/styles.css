@@ -91,13 +91,14 @@ body {
     width: 10px;
     height: 10px;
     background-color: #333;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
     display: none; /* Initially hidden */
     z-index: 1;
 }
 
 /* Adjust the position of each dot */
+/*
 .connection-dot.top {
     top: -5px;
     left: 50%;
@@ -121,3 +122,4 @@ body {
     left: -5px;
     transform: translateY(-50%);
 }
+*/

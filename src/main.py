@@ -16,4 +16,7 @@ def index():
 
 if __name__ == "__main__":
     # Run the Flask app
-    app.run(debug=True)
+    # ssl_context: Enables HTTPS by providing an SSL context. 
+    # You can pass either a path to an SSL certificate file and 
+    # a key file or a tuple containing both the certificate and key in memory.
+    app.run(host='0.0.0.0', port=8080, debug=True, threaded=True)

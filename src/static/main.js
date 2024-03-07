@@ -9,5 +9,5 @@ clearBtn.addEventListener("click", () => {
     // This is temporary. Maybe in the future I'd like to,
     // for example, save the mind map in localstorage or
     // even on a server.
-    window.reload();
+    location.reload();
 });

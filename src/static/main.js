@@ -40,33 +40,3 @@ root.addEventListener('mouseleave', () => {
     menu.style.display = 'none';
     connectionDots.forEach(dot => dot.style.display = 'none');
 });
-
-// Add event listeners for clicking and dragging connection dots
-/*
-connectionDots.forEach(dot => {
-    dot.addEventListener('mousedown', (event) => {
-        event.preventDefault();
-        const mouseX = event.clientX;
-        const mouseY = event.clientY;
-        
-        const handleMouseMove = (event) => {
-            const deltaX = event.clientX - mouseX;
-            const deltaY = event.clientY - mouseY;
-            
-            dot.style.left = `${dot.offsetLeft + deltaX}px`;
-            dot.style.top = `${dot.offsetTop + deltaY}px`;
-            
-            mouseX = event.clientX;
-            mouseY = event.clientY;
-        };
-        
-        const handleMouseUp = () => {
-            document.removeEventListener('mousemove', handleMouseMove);
-            document.removeEventListener('mouseup', handleMouseUp);
-        };
-        
-        document.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('mouseup', handleMouseUp);
-    });
-});
-*/

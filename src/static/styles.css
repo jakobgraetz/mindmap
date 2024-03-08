@@ -98,29 +98,12 @@ body {
     z-index: 1;
 }
 
-/* Adjust the position of each dot */
-/*
-.connection-dot.top {
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
+#beta-link {
+    color: #ee564e;
+    text-decoration: underline;
 }
 
-.connection-dot.right {
-    top: 50%;
-    right: -5px;
-    transform: translateY(-50%);
+#beta-link:hover {
+    color: #cd2b19;
+    cursor: pointer;
 }
-
-.connection-dot.bottom {
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.connection-dot.left {
-    top: 50%;
-    left: -5px;
-    transform: translateY(-50%);
-}
-*/

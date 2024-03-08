@@ -14,6 +14,10 @@ def index():
     # Render the index.html template
     return render_template("index.html")
 
+@app.route("/mind-map")
+def mind_map():
+    return render_template("mindmap.html")
+
 if __name__ == "__main__":
     # Run the Flask app
     # ssl_context: Enables HTTPS by providing an SSL context. 

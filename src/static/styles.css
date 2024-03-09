@@ -35,6 +35,12 @@ button:hover {
     border-radius: 10px;
     padding: 20px;
     display: flex;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.idea-input-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 .idea-input-card input[type="text"] {
@@ -81,4 +87,21 @@ button:hover {
     border-radius: 16px;
     border-color: #333;
     border-width: 3px;
+}
+
+#idea-submit {
+    margin-top: 10px; /* Add margin for spacing */
+    padding: 12px 24px; /* Add padding for better appearance */
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+#idea-submit:hover {
+    background-color: #555;
 }

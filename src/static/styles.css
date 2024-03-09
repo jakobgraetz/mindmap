@@ -16,29 +16,11 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
-.mind-map-clear-btn {
-    background-color: #cd2b19;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+button:hover {
     cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
 }
 
-.mind-map-clear-btn:hover {
-    background-color: #ee564e;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-}
-
-.mind-map-clear-btn:active {
-    transform: translateY(1px);
-    box-shadow: none;
-}
-
-.mindmap {
+.ideas {
     margin-top: 25px;
     width: 100%;
     display: flex;
@@ -46,7 +28,7 @@ body {
     align-items: center;
 }
 
-.mind-map-origin {
+.idea-input-card {
     width: 400px;
     height: 150px;
     border: 2px solid #333;
@@ -55,7 +37,7 @@ body {
     display: flex;
 }
 
-.mind-map-origin input[type="text"] {
+.idea-input-card input[type="text"] {
     border: none;
     background: transparent;
     font-size: 16px;
@@ -63,38 +45,6 @@ body {
     flex: 1;
     outline: none;
     text-align: center;
-}
-
-.menu {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    display: none;
-    z-index: 1;
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.menu-item {
-    display: inline-block;
-    padding: 8px 10px;
-    cursor: pointer;
-    margin: 5px;
-    white-space: nowrap;
-}
-
-.connection-dot {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #333;
-    border-radius: 100%;
-    cursor: pointer;
-    display: none; /* Initially hidden */
-    z-index: 1;
 }
 
 #beta-link {
